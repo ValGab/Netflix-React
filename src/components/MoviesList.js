@@ -10,10 +10,10 @@ const MoviesList = () => {
             {/* Dans chaque section j'importe le nom de la catégorie */}
             <h2>{element.category}</h2>
 
-            {/* Dans chaque section, j'importe le lot d'images correspondant à l'index du tableau */}
+            {/* Dans chaque section, j'importe le lot d'images correspondant à l'élément du tableau */}
             <div className="pictures-list">
-              {element.images.map((index, i) => {
-                return <img src={index} key={i} alt="" />;
+              {element.images.map((img, i) => {
+                return <img src={img} key={i} alt="" />;
               })}
             </div>
           </section>
